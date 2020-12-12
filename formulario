@@ -137,18 +137,14 @@ alert("Le informamos que su cuenta bancaria es: " +document.getElementById('pais
 function mostrarDiaSemana() {
  var fecha = document.getElementById('fechaEncuesta').value
   var d = new Date(fecha);
-  var Semana = new Array(7);
-  Semana [0] = "Domingo";
-  Semana [1] = "Lunes";
-  Semana [2] = "Martes";
-  Semana [3] = "Miércoles";
-  Semana [4] = "Jueves";
-  Semana [5] = "Viernes";
-  Semana [6] = "Sábado";
-
+  var Semana = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
   var diaSemana =  Semana [d.getDay()];
+  var dia = d.getDate();
+  var meses = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
+  var mes = meses[d.getMonth()];
+  var anio = d.getFullYear();
   
-alert("La fecha: "+fecha+ " corresponde al día de la semana "+diaSemana);
+alert("La fecha: "+dia+"/"+mes+"/"+anio+" corresponde al día de la semana "+diaSemana);
 }
 </script>
 
