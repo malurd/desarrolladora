@@ -40,7 +40,7 @@ legend {
 
 <h1>Formulario Información Alta Telefónica</h1>
 
-<form action="/action_page.php">
+<form action="#">
  <fieldset>
   <legend>Datos Personales:</legend>
   <label for="nombre">  Nombre: </label>
