@@ -120,7 +120,7 @@ Cuenta: <input type="text" class="inputFormulario" name="cuenta" id="cuenta" pla
 <input type="button" class="inputBoton" value="Mostrar Valoración" onclick="mostrarValoracion()" />
 
 <input type="button" class="inputBoton" value="Mostrar Cuenta" onclick="mostrarCuenta()" />
-<input type="button" class="inputBoton" value="Mostrar Dia Semana" />
+<input type="button" class="inputBoton" value="Mostrar Dia Semana" onclick="mostrarDiaSemana()" />
 
 </form>
 </body>
@@ -133,4 +133,22 @@ alert("Has valorado con "+document.getElementById('valoracion').value+ " puntos"
 function mostrarCuenta() {
 alert("Le informamos que su cuenta bancaria es: " +document.getElementById('pais').value+"-"+document.getElementById('iban').value+"-"+document.getElementById('entidad').value+"-"+document.getElementById('sucursal').value+"-"+document.getElementById('dc').value+"-"+document.getElementById('cuenta').value);
 }
+
+function mostrarDiaSemana() {
+ var fecha = document.getElementById('fechaEncuesta').value
+  var d = new Date(fecha);
+  var Semana = new Array(7);
+  Semana [0] = "Domingo";
+  Semana [1] = "Lunes";
+  Semana [2] = "Martes";
+  Semana [3] = "Miércoles";
+  Semana [4] = "Jueves";
+  Semana [5] = "Viernes";
+  Semana [6] = "Sábado";
+
+  var diaSemana =  Semana [d.getDay()];
+  
+alert("La fecha: "+fecha+ " corresponde al día de la semana "+diaSemana);
+}
 </script>
+
