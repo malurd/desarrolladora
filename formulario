@@ -88,13 +88,13 @@ En caso de portabilidad, elija la nueva compañía:
 
 País: <input type="text" class="inputFormulario" name="pais" id="pais" value="ES" readonly="readonly" /> (sólo válido ES)<br />
 
-Control IBAN: <input type="text" class="inputFormulario" name="iban" id="iban" placeholder="XX" pattern="[0-9]{2}" /> (dos dígitos)<br />
-Entidad: <input type="text" class="inputFormulario" name="entidad" id="entidad" placeholder="XXXX" pattern="[0-9]{4}" /> (cuatro dígitos)<br />
-Sucursal: <input type="text" class="inputFormulario" name="sucursal" id="sucursal" placeholder="XXXX" pattern="[0-9]{4}" /> (cuatro dígitos)<br />
+Control IBAN: <input type="text" class="inputFormulario" name="iban" id="iban" placeholder="XX" pattern="[0-9]{2}" maxlength="2" /> (dos dígitos)<br />
+Entidad: <input type="text" class="inputFormulario" name="entidad" id="entidad" placeholder="XXXX" pattern="[0-9]{4}" maxlength="4" /> (cuatro dígitos)<br />
+Sucursal: <input type="text" class="inputFormulario" name="sucursal" id="sucursal" placeholder="XXXX" pattern="[0-9]{4}" maxlength="4" /> (cuatro dígitos)<br />
 
-DC: <input type="text" class="inputFormulario" name="dc"id="dc" placeholder="XX" pattern="[0-9]{2}" /> (dos dígitos)<br />
+DC: <input type="text" class="inputFormulario" name="dc"id="dc" placeholder="XX" pattern="[0-9]{2}" maxlength="2" /> (dos dígitos)<br />
 
-Cuenta: <input type="text" class="inputFormulario" name="cuenta" id="cuenta" placeholder="XXXXXXXXXX" pattern="[0-9]{10}" /> (diez dígitos)<br />
+Cuenta: <input type="text" class="inputFormulario" name="cuenta" id="cuenta" placeholder="XXXXXXXXXX" pattern="[0-9]{10}" maxlength="10" /> (diez dígitos)<br />
 
 </fieldset>
 
